@@ -1,0 +1,4 @@
+docker build -f Dockerfile_base --progress=plain -t blastr_base .
+docker build -f Dockerfile --progress=plain -t blastr:latest .
+docker run -p 80:80 blastr:latest
+# then go to 127.0.0.1:80
